@@ -9,14 +9,12 @@ interface CardProps {
     width?: string;
     height?: string;
     variant: CardVariant;
-    onClick: (num: number) => void
 }
 
 const Card: React.FC<CardProps> = ({
      width,
      height,
      variant,
-     onClick,
      children,
 
 }) => {
@@ -27,7 +25,6 @@ const Card: React.FC<CardProps> = ({
             border: variant === CardVariant.outlined ? '1px solid grey' : 'none',
             background: variant === CardVariant.primary ? 'lightgray' : '',
         }}
-        onClick={() => onClick(state)}
         >
             {children}
         </div>
