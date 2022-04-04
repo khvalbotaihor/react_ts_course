@@ -39,8 +39,14 @@ const [todos, setTodos] = useState<ITodo[]>([])
             <Card width='200px' height="200px" variant={CardVariant.primary}>
                 <button>Button</button>
             </Card>
-            <List items={users} renderItem={(user: IUser) => <UserItem user={user} key={user.id} /> } />
-            <List items={todos} renderItem={(todo: ITodo) =>  <TodoItem todo={todo} key={todo.id} /> } />
+            <List
+                items={users}
+                renderItem={(user: IUser) => <UserItem user={user} key={user.id} /> }
+            />
+            <List
+                items={todos}
+                renderItem={(todo: ITodo) =>  <TodoItem todo={todo} key={todo.id} /> }
+            />
         </div>
     );
 };
