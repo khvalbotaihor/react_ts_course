@@ -18,7 +18,7 @@ const App = () => {
                 <Route path={'/todos'} exact>
                     <TodosPage/>
                 </Route>
-                <Route path={'/user/:id'}>
+                <Route path={'/users/:id'}>
                     <UserItemPage />
                 </Route>
                 <Route path={'/todos/:id'}>
