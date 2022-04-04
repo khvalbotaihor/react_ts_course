@@ -19,10 +19,10 @@ const App = () => {
                     <TodosPage/>
                 </Route>
                 <Route path={'/users/:id'}>
-                    <UserItemPage />
+                    <UserItemPage/>
                 </Route>
                 <Route path={'/todos/:id'}>
-                    <TodoItemPage />
+                    <TodoItemPage/>
                 </Route>
             </div>
         </BrowserRouter>
