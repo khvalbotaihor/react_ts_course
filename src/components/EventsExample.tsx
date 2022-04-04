@@ -41,7 +41,7 @@ const EventsExample :FC = () => {
                 onDrop={dropHandler}
                 onDragLeave={leaveHandler}
                 onDragOver={dragWithPreventHandler}
-                style={{width:200, height: 200, background:'red', marginTop: 15}}>
+                style={{width:200, height: 200, background: isDrag? 'blue': 'red', marginTop: 15}}>
 
             </div>
         </div>
