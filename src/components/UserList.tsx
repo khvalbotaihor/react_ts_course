@@ -11,7 +11,7 @@ const UserList: FC<UserListProps> = ({users}) => {
     return (
         <div>
             {users.map(user =>
-                <UserItem user={user} key={user.id}/>
+                <UserItem user={user} key={user.id} />
             )}
         </div>
     );
